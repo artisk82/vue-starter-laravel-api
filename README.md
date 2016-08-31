@@ -29,6 +29,11 @@ php artisan jwt:generate
 php artisan serve
 ```
 
+### Login 4:
+```
+admin@example.com:admin
+```
+
 ### Note about Apache
 If you use Apache to serve this, you will need to add the following 2 lines to your .htaccess (or your virtualhost configuration):
 ```
