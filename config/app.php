@@ -140,6 +140,8 @@ return [
         /*
          * Application Service Providers...
          */
+        'Maatwebsite\Excel\ExcelServiceProvider',
+        App\Providers\ExcelParserServiceProvider::class,
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
@@ -200,6 +202,7 @@ return [
         'APIRoute'  => Dingo\Api\Facade\Route::class,
         'API'       => Dingo\Api\Facade\API::class,
         'JWTAuth'   => Tymon\JWTAuth\Facades\JWTAuth::class,
+        'Excel' => 'Maatwebsite\Excel\Facades\Excel',
     ],
 
 ];

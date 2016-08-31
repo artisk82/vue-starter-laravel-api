@@ -2,13 +2,13 @@
 
 This application will serve as the companion app to another project called vue-starter. It is meant to be a small demo of a Laravel API, using Dingo and JWT for authentication.
 
-[vue-starter Frontend App](https://github.com/layer7be/vue-starter)
+[vue-starter Frontend App](https://github.com/artisk82/vue-starter)
 
 ## Installation
 
 ### Step 1: Clone the repo
 ```
-git clone https://github.com/layer7be/vue-starter-laravel-api
+git clone https://github.com/artisk82/vue-starter-laravel-api.git
 ```
 
 ### Step 2: Prerequisites
@@ -16,10 +16,11 @@ git clone https://github.com/layer7be/vue-starter-laravel-api
 cp .env.example .env
 composer install
 touch database/database.sqlite
+touch database/database_test.sqlite
 php artisan migrate
 php artisan db:seed
 php artisan key:generate
-php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\JWTAuthServiceProvider"
+php artisan vendor:publish
 php artisan jwt:generate
 ```
 
